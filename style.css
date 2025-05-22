@@ -23,10 +23,14 @@
 @media (min-width: 1024px) {
   .my-container {
     width: 100%;
-    padding: 0 80px;
+    padding: 0 100px;
   }
 }
 
 body {
   font-family: "Space Grotesk", sans-serif;
+}
+
+.h-dvh {
+  height: 100dvh;
 }

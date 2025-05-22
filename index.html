@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Bahar Alekberova" />
     <meta name="description" content="DevLab internship program - Week 3" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
@@ -17,7 +17,10 @@
     <title>Positivus</title>
   </head>
   <body class="my-container">
-    <div class="flex items-center justify-between w-full py-4 md:py-8">
+    <!-- NAVBAR -->
+    <div
+      class="flex items-center justify-between w-full h-[68px] py-4 md:my-[40px] lg:my-[60px]"
+    >
       <div class="w-[120px] md:w-[160px] lg:w-[220px]">
         <a href="#">
           <img
@@ -33,42 +36,137 @@
       </div>
 
       <div
-        class="hidden md:flex items-center md:space-x-[28px] lg:space-x-[40px]"
+        class="hidden md:flex items-center md:space-x-[28px] lg:space-x-[34px] xl:space-x-[40px]"
       >
         <ul class="flex items-center md:space-x-[28px] lg:space-x-[40px]">
           <li>
-            <a href="#" class="text-[14px] lg:text-[16px] xl:text-[18px]"
+            <a
+              href="#"
+              class="text-[14px] lg:text-[16px] xl:text-[20px] leading-7"
               >About us</a
             >
           </li>
           <li>
-            <a href="#" class="text-[14px] lg:text-[16px] xl:text-[18px]"
+            <a
+              href="#"
+              class="text-[14px] lg:text-[16px] xl:text-[20px] leading-7"
               >Services</a
             >
           </li>
           <li>
-            <a href="#" class="text-[14px] lg:text-[16px] xl:text-[18px]"
+            <a
+              href="#"
+              class="text-[14px] lg:text-[16px] xl:text-[20px] leading-7"
               >Use Cases</a
             >
           </li>
           <li>
-            <a href="#" class="text-[14px] lg:text-[16px] xl:text-[18px]"
+            <a
+              href="#"
+              class="text-[14px] lg:text-[16px] xl:text-[20px] leading-7"
               >Pricing</a
             >
           </li>
           <li>
-            <a href="#" class="text-[14px] lg:text-[16px] xl:text-[18px]"
+            <a
+              href="#"
+              class="text-[14px] lg:text-[16px] xl:text-[20px] leading-7"
               >Blog</a
             >
           </li>
         </ul>
 
         <button
-          class="border border-(--custom-black) md:py-3 md:px-4 lg:py-5 lg:px-6 xl:px-8 rounded-xl md:text-[12px] lg:text-[16px] xl:text-[18px] cursor-pointer"
+          class="border border-[var(--custom-black)] md:py-3 md:px-4 lg:py-4 lg:px-6 xl:px-[35px] xl:py-[20px] rounded-xl md:text-[12px] lg:text-[16px] xl:text-[20px] leading-7 cursor-pointer"
         >
           Request a quote
         </button>
       </div>
+    </div>
+
+    <!-- HERO mobile -->
+    <div class="flex flex-col space-y-6 mb-[60px] md:hidden">
+      <p class="font-medium text-4xl">
+        Navigating the digital landscape for success
+      </p>
+      <div class="w-full">
+        <img
+          src="./img/hero-img.svg"
+          alt="Hero Image"
+          class="size-full object-cover"
+        />
+      </div>
+      <p>
+        Our digital marketing agency helps businesses grow and succeed online
+        through a range of services including SEO, PPC, social media marketing,
+        and content creation.
+      </p>
+      <button
+        class="bg-[var(--custom-black)] text-white text-sm py-3 rounded-lg cursor-pointer"
+      >
+        Book a consultation
+      </button>
+    </div>
+
+    <!-- HERO web -->
+    <div class="hidden md:flex space-x-28">
+      <div class="w-1/2 flex flex-col items-start space-y-9">
+        <h1 class="text-[60px] font-medium leading-[100%]">
+          Navigating the digital landscape for success
+        </h1>
+        <p class="text-[20px] leading-7">
+          Our digital marketing agency helps businesses grow and succeed online
+          through a range of services including SEO, PPC, social media
+          marketing, and content creation.
+        </p>
+        <button
+          class="bg-[var(--custom-black)] text-white text-[20px] leading-7 py-5 px-9 rounded-xl cursor-pointer"
+        >
+          Book a consultation
+        </button>
+      </div>
+
+      <div class="w-1/2">
+        <img
+          src="./img/hero-img.svg"
+          alt="Hero Image"
+          class="size-full object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- COMPANIES -->
+    <div class="grid grid-cols-3 md:grid-cols-6 gap-6">
+      <img
+        src="./img/amazon.svg"
+        class="grayscale h-12 w-full object-container"
+        alt="Amazon logo"
+      />
+      <img
+        src="./img/dribble.svg"
+        class="grayscale h-12 w-full object-container"
+        alt="Dribble logo"
+      />
+      <img
+        src="./img/hubspot.svg"
+        class="grayscale h-12 w-full object-container"
+        alt="Hubspot logo"
+      />
+      <img
+        src="./img/notion.svg"
+        class="grayscale h-12 w-full object-container"
+        alt="Notion logo"
+      />
+      <img
+        src="./img/netflix.svg"
+        class="grayscale h-12 w-full object-container"
+        alt="Netflix logo"
+      />
+      <img
+        src="./img/zoom.svg"
+        class="grayscale h-12 w-full object-container"
+        alt="Zoom logo"
+      />
     </div>
   </body>
 </html>
