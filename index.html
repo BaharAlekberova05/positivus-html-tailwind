@@ -137,7 +137,7 @@
 
     <!-- COMPANIES -->
     <section
-      class="grid grid-cols-3 md:grid-cols-6 gap-6 mb-[40px] md:mb-[140px]"
+      class="grid grid-cols-3 md:grid-cols-6 gap-6 mb-[40px] mt-8 lg:mt-0 md:mb-[140px]"
     >
       <img
         src="./img/amazon.svg"
@@ -189,12 +189,285 @@
     <!-- SERVICES GRID -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
       <div
-        class="bg-[var(--custom-white)] border border-[var(--custom-black)] rounded-3xl shadow-[0px_5px_0px_0px_#191A23] p-6 md:p-12 flex flex-col"
+        class="bg-[var(--custom-white)] border border-[var(--custom-black)] rounded-3xl shadow-[0px_5px_0px_0px_#191A23] p-6 md:p-12 flex flex-col md:flex-row"
       >
-        <div>
+        <div class="md:w-1/2 flex flex-col justify-between">
           <div>
-            <div>Search engine</div>
-            <div>optimization</div>
+            <div
+              class="bg-[var(--custom-green)] px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Search engine
+            </div>
+            <div
+              class="bg-[var(--custom-green)] px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              optimization
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-4 cursor-pointer">
+            <div
+              class="size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full"
+            >
+              <i
+                class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+              ></i>
+            </div>
+            <span class="text-[20px] leading-7">Learn more</span>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 flex items-end">
+          <div
+            class="size-5 md:size-8 lg:size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full md:hidden"
+          >
+            <i
+              class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+            ></i>
+          </div>
+
+          <div>
+            <img
+              src="./img/service-1.png"
+              alt="Search engine optimization"
+              class="size-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-[var(--custom-green)] border border-[var(--custom-black)] rounded-3xl shadow-[0px_5px_0px_0px_#191A23] p-6 md:p-12 flex flex-col md:flex-row"
+      >
+        <div class="md:w-1/2 flex flex-col justify-between">
+          <div>
+            <div
+              class="bg-white px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Pay-per-click
+            </div>
+            <div
+              class="bg-white px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              advertising
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-4 cursor-pointer">
+            <div
+              class="size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full"
+            >
+              <i
+                class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+              ></i>
+            </div>
+            <span class="text-[20px] leading-7">Learn more</span>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 flex items-end">
+          <div
+            class="size-5 md:size-8 lg:size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full md:hidden"
+          >
+            <i
+              class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+            ></i>
+          </div>
+
+          <div>
+            <img
+              src="./img/service-2.png"
+              alt="Search engine optimization"
+              class="size-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-[var(--custom-black)] border border-[var(--custom-black)] rounded-3xl shadow-[0px_5px_0px_0px_#191A23] p-6 md:p-12 flex flex-col md:flex-row"
+      >
+        <div class="md:w-1/2 flex flex-col justify-between">
+          <div>
+            <div
+              class="bg-white px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Social Media
+            </div>
+            <div
+              class="bg-white px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Marketing
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-4 cursor-pointer">
+            <div
+              class="size-10 bg-white flex items-center justify-center rounded-full"
+            >
+              <i class="fa-solid fa-arrow-up rotate-45 text-black"></i>
+            </div>
+            <span class="text-[20px] leading-7 text-white">Learn more</span>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 flex items-end">
+          <div
+            class="size-5 md:size-8 lg:size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full md:hidden"
+          >
+            <i
+              class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+            ></i>
+          </div>
+
+          <div>
+            <img
+              src="./img/service-3.png"
+              alt="Search engine optimization"
+              class="size-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-[var(--custom-white)] border border-[var(--custom-black)] rounded-3xl shadow-[0px_5px_0px_0px_#191A23] p-6 md:p-12 flex flex-col md:flex-row"
+      >
+        <div class="md:w-1/2 flex flex-col justify-between">
+          <div>
+            <div
+              class="bg-[var(--custom-green)] px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Email
+            </div>
+            <div
+              class="bg-[var(--custom-green)] px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Marketing
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-4 cursor-pointer">
+            <div
+              class="size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full"
+            >
+              <i
+                class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+              ></i>
+            </div>
+            <span class="text-[20px] leading-7">Learn more</span>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 flex items-end">
+          <div
+            class="size-5 md:size-8 lg:size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full md:hidden"
+          >
+            <i
+              class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+            ></i>
+          </div>
+
+          <div>
+            <img
+              src="./img/service-4.png"
+              alt="Search engine optimization"
+              class="size-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-[var(--custom-green)] border border-[var(--custom-black)] rounded-3xl shadow-[0px_5px_0px_0px_#191A23] p-6 md:p-12 flex flex-col md:flex-row"
+      >
+        <div class="md:w-1/2 flex flex-col justify-between">
+          <div>
+            <div
+              class="bg-white px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Content
+            </div>
+            <div
+              class="bg-white px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Creation
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-4 cursor-pointer">
+            <div
+              class="size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full"
+            >
+              <i
+                class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+              ></i>
+            </div>
+            <span class="text-[20px] leading-7">Learn more</span>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 flex items-end">
+          <div
+            class="size-5 md:size-8 lg:size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full md:hidden"
+          >
+            <i
+              class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+            ></i>
+          </div>
+
+          <div>
+            <img
+              src="./img/service-5.png"
+              alt="Search engine optimization"
+              class="size-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-[var(--custom-black)] border border-[var(--custom-black)] rounded-3xl shadow-[0px_5px_0px_0px_#191A23] p-6 md:p-12 flex flex-col md:flex-row"
+      >
+        <div class="md:w-1/2 flex flex-col justify-between">
+          <div>
+            <div
+              class="bg-[var(--custom-green)] px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Analytics and
+            </div>
+            <div
+              class="bg-[var(--custom-green)] px-2 py-1 font-medium text-[18px] md:text-[24px] lg:text-[30px] leading-[100%] rounded-md inline-block"
+            >
+              Tracking
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-4 cursor-pointer">
+            <div
+              class="size-10 bg-white flex items-center justify-center rounded-full"
+            >
+              <i class="fa-solid fa-arrow-up rotate-45 text-black"></i>
+            </div>
+            <span class="text-[20px] leading-7 text-white">Learn more</span>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 flex items-end">
+          <div
+            class="size-5 md:size-8 lg:size-10 bg-[var(--custom-black)] flex items-center justify-center rounded-full md:hidden"
+          >
+            <i
+              class="fa-solid fa-arrow-up rotate-45 text-[var(--custom-green)]"
+            ></i>
+          </div>
+
+          <div>
+            <img
+              src="./img/service-6.png"
+              alt="Search engine optimization"
+              class="size-full"
+            />
           </div>
         </div>
       </div>
