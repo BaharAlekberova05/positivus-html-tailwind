@@ -16,9 +16,9 @@
     />
     <title>Positivus</title>
   </head>
-  <body class="my-container">
+  <body class="my-container pb-40">
     <!-- NAVBAR -->
-    <div
+    <header
       class="flex items-center justify-between w-full h-[68px] py-4 md:my-[40px] lg:my-[60px]"
     >
       <div class="w-[120px] md:w-[160px] lg:w-[220px]">
@@ -35,7 +35,7 @@
         <i class="fa-solid fa-bars text-lg"></i>
       </div>
 
-      <div
+      <nav
         class="hidden md:flex items-center md:space-x-[28px] lg:space-x-[34px] xl:space-x-[40px]"
       >
         <ul class="flex items-center md:space-x-[28px] lg:space-x-[40px]">
@@ -81,11 +81,11 @@
         >
           Request a quote
         </button>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <!-- HERO mobile -->
-    <div class="flex flex-col space-y-6 mb-[60px] md:hidden">
+    <section class="flex flex-col space-y-6 mb-[60px] md:hidden">
       <p class="font-medium text-4xl">
         Navigating the digital landscape for success
       </p>
@@ -106,10 +106,10 @@
       >
         Book a consultation
       </button>
-    </div>
+    </section>
 
     <!-- HERO web -->
-    <div class="hidden md:flex space-x-28">
+    <section class="hidden md:flex space-x-28">
       <div class="w-1/2 flex flex-col items-start space-y-9">
         <h1 class="text-[60px] font-medium leading-[100%]">
           Navigating the digital landscape for success
@@ -133,10 +133,12 @@
           class="size-full object-cover"
         />
       </div>
-    </div>
+    </section>
 
     <!-- COMPANIES -->
-    <div class="grid grid-cols-3 md:grid-cols-6 gap-6">
+    <section
+      class="grid grid-cols-3 md:grid-cols-6 gap-6 mb-[40px] md:mb-[140px]"
+    >
       <img
         src="./img/amazon.svg"
         class="grayscale h-12 w-full object-container"
@@ -167,6 +169,35 @@
         class="grayscale h-12 w-full object-container"
         alt="Zoom logo"
       />
+    </section>
+
+    <!-- SERVICES -->
+    <section
+      class="flex flex-col items-center md:flex-row space-y-6 md:space-y-0 space-x-6 md:space-x-10 mb-[60px] md:mb-[85px]"
+    >
+      <div
+        class="bg-[var(--custom-green)] px-2 rounded-md text-[24px] md:text-[40px] font-medium"
+      >
+        Services
+      </div>
+      <p class="md:w-[580px] text-[14px] md:text-[18px]">
+        At our digital marketing agency, we offer a range of services to help
+        businesses grow and succeed online. These services include:
+      </p>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+      <div
+        class="bg-[var(--custom-white)] border border-[var(--custom-black)] rounded-3xl shadow-[0px_5px_0px_0px_#191A23] p-6 md:p-12 flex flex-col"
+      >
+        <div>
+          <div>
+            <div>Search engine</div>
+            <div>optimization</div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
