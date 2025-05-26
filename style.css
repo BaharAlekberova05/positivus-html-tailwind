@@ -34,3 +34,20 @@ body {
 .h-dvh {
   height: 100dvh;
 }
+
+.custom-checkbox:checked + .check-icon::before {
+  transform: scale(1) translate(-50%, -50%);
+}
+
+.check-icon::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--custom-green);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: scale(0) translate(-50%, -50%);
+  transition: transform 0.2s ease;
+}
